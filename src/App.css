@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  text-align: center;
+}
+
+header {
+  flex-direction: row;
+  width: 100%;
+}
+
+h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  margin: 5px;
+}
+
+h4 {
+  font-style: italic;
+}
+
+.profilePicture {
+  width: 150px;
+  height: auto;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.bio {
+  flex-direction: row;
+  max-width: 500px;
+  align-self: center;
+}
+
+a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+}
