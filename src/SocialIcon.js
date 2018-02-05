@@ -1,4 +1,5 @@
 import React from 'react';
+import './SocialIcon.css';
 
 const SocialIcon = ({ icon, link, alt }) => {
   return (
