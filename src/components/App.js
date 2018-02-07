@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 import SocialIcon from './SocialIcon';
-import me from './me.JPG';
+import me from '../assets/me.JPG';
 import './App.css';
 
 class App extends Component {
