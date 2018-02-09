@@ -10,12 +10,19 @@ class App extends Component {
     this.state = {
       socials: [
         {
-          name: 'Github',
+          name: 'Code',
           link: 'https://github.com/sneakycr0w',
+          icon: 'github',
         },
         {
-          name: 'Mail',
-          link: 'mailto:zach@sneakycr0w.com'
+          name: 'Contact',
+          link: 'mailto:zach@sneakycr0w.com',
+          icon: 'mail'
+        },
+        {
+          name: 'Resume',
+          link: 'https://www.linkedin.com/in/zachary-sohovich',
+          icon: 'linkedin'
         }
       ]
     }
@@ -32,8 +39,8 @@ class App extends Component {
         <section className="bio">
           <p>I am a {moment("19930601", "YYYYDDMM").fromNow(true)} old developer from Portland, OR. I like working with current technologies such as React, Node.js, MongoDB, and more.</p>
           {this.state.socials.map((social, index) => (
-            <Button href={social.link} type="primary" style={{ margin: "5px" }} key={index}>
-              <Icon type={social.name.toLowerCase()} key={index} /> {social.name}
+            <Button href={social.link} style={{ margin: "5px" }} key={index}>
+              <Icon type={social.icon} key={index} /> {social.name}
             </Button>
           ))}
         </section>
