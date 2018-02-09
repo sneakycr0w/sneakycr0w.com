@@ -36,6 +36,7 @@ class App extends Component {
               <Icon type={social.name.toLowerCase()} key={index} /> {social.name}
             </Button>
           ))}
+          <p>I <Icon type="heart" /> Erin!</p>
         </section>
         <footer>
           <p class="small">Coded with <Icon type="heart" style={{ color: "red" }}/> on <a href="https://github.com/sneakycr0w/sneakycr0w.com">Github</a></p>
