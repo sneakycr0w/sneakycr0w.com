@@ -1,12 +1,5 @@
 @import '~antd/dist/antd.css';
 
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 2%;
-  text-align: center;
-}
-
 header {
   flex-direction: row;
   width: 100%;
@@ -22,6 +15,13 @@ h4 {
   font-style: italic;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  text-align: center;
+}
+
 .profilePicture {
   width: 150px;
   height: auto;
@@ -33,13 +33,4 @@ h4 {
   flex-direction: row;
   max-width: 500px;
   align-self: center;
-}
-
-.socialLink {
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  margin: 5px;
-  font-size: 28px;
 }

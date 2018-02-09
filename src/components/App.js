@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
-import Icon from 'antd/lib/icon';
+import { Icon, Button } from 'antd';
 import me from '../assets/me.JPG';
 import './App.css';
 
@@ -10,11 +10,11 @@ class App extends Component {
     this.state = {
       socials: [
         {
-          name: 'github',
+          name: 'Github',
           link: 'https://github.com/sneakycr0w',
         },
         {
-          name: 'mail',
+          name: 'Mail',
           link: 'mailto:zach@sneakycr0w.com'
         }
       ]
@@ -33,10 +33,10 @@ class App extends Component {
           <p>I am a {moment("19930601", "YYYYDDMM").fromNow(true)} old developer from Portland, OR. I like working with current technologies such as React, Node.js, MongoDB, and more.</p>
         </section>
         <section className="socials">
-          {this.state.socials.map(social => (
-            <a href={social.link}>
-              <Icon type={social.name} key={social.name} className="socialLink" />
-            </a>
+          {this.state.socials.map((social, index) => (
+            <Button href={social.link} type="primary" style={{ margin: "5px" }}>
+              <Icon type={social.name.toLowerCase()} key={index} /> {social.name}
+            </Button>
           ))}
         </section>
       </div>
