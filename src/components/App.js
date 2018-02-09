@@ -34,7 +34,7 @@ class App extends Component {
         </section>
         <section className="socials">
           {this.state.socials.map((social, index) => (
-            <Button href={social.link} type="primary" style={{ margin: "5px" }}>
+            <Button href={social.link} type="primary" style={{ margin: "5px" }} key={index}>
               <Icon type={social.name.toLowerCase()} key={index} /> {social.name}
             </Button>
           ))}
