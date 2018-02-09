@@ -31,14 +31,15 @@ class App extends Component {
         </header>
         <section className="bio">
           <p>I am a {moment("19930601", "YYYYDDMM").fromNow(true)} old developer from Portland, OR. I like working with current technologies such as React, Node.js, MongoDB, and more.</p>
-        </section>
-        <section className="socials">
           {this.state.socials.map((social, index) => (
             <Button href={social.link} type="primary" style={{ margin: "5px" }} key={index}>
               <Icon type={social.name.toLowerCase()} key={index} /> {social.name}
             </Button>
           ))}
         </section>
+        <footer>
+          <p class="small">Coded with <Icon type="heart" style={{ color: "red" }}/> on <a href="https://github.com/sneakycr0w/sneakycr0w.com">Github</a></p>
+        </footer>
       </div>
     )
   }
