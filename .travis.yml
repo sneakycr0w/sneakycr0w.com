@@ -1,7 +1,12 @@
 language: node_js
 node_js:
-- '0.11'
-- '0.10'
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm test
+  - npm run build
 deploy:
   provider: s3
   access_key_id: AKIAIXEK2Y3XOUYIL65Q
