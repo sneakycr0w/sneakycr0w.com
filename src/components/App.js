@@ -5,17 +5,20 @@ import me from '../assets/me.JPG';
 import './App.css';
 
 class App extends Component {
-  state = {
-    socials: [
-      {
-        alt: 'GitHub',
-        link: 'https://github.com/sneakycr0w',
-      },
-      {
-        alt: 'Email',
-        link: 'mailto:zach@sneakycr0w.com'
-      }
-    ]
+  constructor() {
+    super();
+    this.state = {
+      socials: [
+        {
+          alt: 'GitHub',
+          link: 'https://github.com/sneakycr0w',
+        },
+        {
+          alt: 'Email',
+          link: 'mailto:zach@sneakycr0w.com'
+        }
+      ]
+    }
   }
 
   render() {
