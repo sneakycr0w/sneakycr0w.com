@@ -33,7 +33,11 @@ class App extends Component {
           <p>I am a {moment("19930601", "YYYYDDMM").fromNow(true)} old developer from Portland, OR. I like working with current technologies such as React, Node.js, MongoDB, and more.</p>
         </section>
         <section className="socials">
-          {this.state.socials.map(social => (<Icon type={social.name} key={social.name} />))}
+          {this.state.socials.map(social => (
+            <a href={social.link}>
+              <Icon type={social.name} key={social.name} className="socialLink" />
+            </a>
+          ))}
         </section>
       </div>
     )
