@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 import { Icon, Button } from 'antd';
+import ContactForm from './ContactForm';
 import me from '../assets/me.JPG';
 import './App.css';
 
@@ -39,6 +40,7 @@ class App extends Component {
             </Button>
           ))}
         </section>
+      <ContactForm />
       </div>
     )
   }
