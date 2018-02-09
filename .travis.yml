@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: s3
+  access_key_id: AKIAIXEK2Y3XOUYIL65Q
+  secret_access_key:
+    secure: dOr3Wx8ybJ8+TIpah+A5tOCedq5F+OhMvyP1w/cz/dMtLH3jUV3ag/7M5fc5LjETBeqb7o4lvIs/xDwfc4V+aDk1Q1yUfppwcoSzwOFIy9b121/KqdBXBVPJ534ngzqAPQI0waU6EqlEqD71E29TIHj2ksUP+EitZwvFgAjVUmqilKfC4wyLPysNFZUmMwdyBjWhvtUspLnboVU8N7LMt1X8IlgU7NegmU5zVN9FnpfKrYI5tGFDKr1dP2Xivjmk4RS/LmkgUCaXs62ZMYuSAgf34MUp/6spX74CF7MthISKYGoGxiY7t6dAuVgz/EJcjj+f0fkvJy2vN18LJCKA+Vt2fXClFQJCobkuHVgGnC4cnCU1YcLvWogYVfnxOL1DvebvJxvLyiHRb9iEckxtAGXpkA1BZpjewtAys2B8ABDiQshGhSANMrfViGdvk5gf7Idivp+pBA0YkRKpFJD1+6loIO76tL2g8qwUaqjMx5EFlUTEfWY2+8NxmvwJsGwnPy5QxO7L9R+XjwaQN3y5kFu5QYku234bLxMpNTJjzssufn35FRD3N3gxAYfF2DBtnrZcIdhQdEagbcI4AlDA/LqIh9zcPAWitWj+c8zQ8MGxb1UCMjdFZQf0bU9H8vJcV1j4DbKB3chywGKe1Lxs1m72oDfD6RNaERsLFvtWT1A=
+  bucket: aws-website-sneakycrwcom-g7kgp
+  local-dir: build
+  acl: ''
+  on:
+    repo: sneakycr0w/sneakycr0w.com
