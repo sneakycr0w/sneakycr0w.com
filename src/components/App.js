@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
-import { Icon, Button } from 'reactbulma';
+import { Icon, Button, Section, Container, Title, SubTitle } from 'reactbulma';
 import me from '../assets/me.JPG';
 import './App.css';
 
@@ -31,17 +31,19 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <header>
+        <Section>
           <img src={me} alt="Zachary Sohovich" className="profilePicture" />
-          <h3>Zachary E Sohovich</h3>
-          <h4>React Developer, Portland, OR</h4>
-        </header>
-        <section className="bio">
-          <p>
-            I am a {moment('19930601', 'YYYYDDMM').fromNow(true)} old developer
-            from Portland, OR. I like working with current technologies such as
-            React, Node.js, MongoDB, and more.
-          </p>
+          <Title>
+            Zachary E Sohovich
+          </Title>
+          <SubTitle>
+            React Developer in Portland, OR
+          </SubTitle>
+          <Container className="bio">
+              I am a {moment('19930601', 'YYYYDDMM').fromNow(true)} old developer
+              from Portland, OR. I like working with current technologies such as
+              React, Node.js, MongoDB, and more.
+          </Container>
           {this.state.socials.map(social => (
             <Button as="a" key={social.name} href={social.link} className="button">
               <Icon small>
@@ -50,12 +52,10 @@ class App extends Component {
               <span>{social.name}</span>
             </Button>
           ))}
-        </section>
-        <footer>
-          <p className="small">
-            Coded with <Icon small danger><i className="far fa-heart" /></Icon> on <a href="https://github.com/sneakycr0w/sneakycr0w.com">Github</a>
+          <p style={{ margin: '1%' }}>
+            Coded with <Icon small><i style={{ color: 'red' }} className="far fa-heart" /></Icon> on <a href="https://github.com/sneakycr0w/sneakycr0w.com">Github</a>
           </p>
-        </footer>
+        </Section>
       </div>
     );
   }
