@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
-import { Icon, Button, Section, Container, Title, SubTitle, Link } from 'reactbulma';
+import { Icon, Button, Section, Container, Title, SubTitle } from 'reactbulma';
 import me from '../assets/me.JPG';
 import './App.css';
 
@@ -52,9 +52,6 @@ class App extends Component {
               <span>{social.name}</span>
             </Button>
           ))}
-          <p style={{ margin: '1%' }}>
-            Coded with <Icon small><i style={{ color: 'red' }} className="far fa-heart" /></Icon> on <Link src="https://github.com/sneakycr0w/sneakycr0w.com">Github</Link>
-          </p>
         </Section>
       </div>
     );
