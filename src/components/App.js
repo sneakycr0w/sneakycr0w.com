@@ -16,7 +16,7 @@ class App extends Component {
         },
         {
           name: 'Contact',
-          link: 'mailto:zach@sneakycr0w.com',
+          link: 'mailto:zach@sneakycr0w.com?subject=sup',
           icon: 'far fa-paper-plane'
         },
         {
